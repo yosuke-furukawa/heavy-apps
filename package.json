@@ -1,0 +1,20 @@
+{
+  "name": "heavy-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosuke-furukawa/heavy-apps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/heavy-apps/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/heavy-apps#readme"
+}
