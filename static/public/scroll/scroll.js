@@ -7,13 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+var throttle = function(fn, interval) {
+  var lastTime = Date.now() - interval
+  return function() {
+    if ((lastTime + interval) < Date.now()) {
+      lastTime = Date.now()
+      fn()
+    }
+  }
+}
+
 window.addEventListener("scroll", (e) => {
-    e.preventDefault();
     const height = window.outerHeight;
     const scrollVal = window.pageYOffset;
     const more = document.getElementById("more");
     const rect = more.getBoundingClientRect();
-    for (let i=0;i<100000;i++) {
+    for (let i=0;i<5000;i++) {
       console.log(rect.top + i);
     }
     if (scrollVal + height> rect.top + scrollVal) {
